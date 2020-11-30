@@ -1,5 +1,9 @@
 package geometry
 
 func CubeVolume(n int) int {
-  return n * n * n
+  if n != 0 {
+    return n * n * n, nil
+  } else {
+    return 0, erros.New("Zero lengh egde is not allowed")
+  }
 }

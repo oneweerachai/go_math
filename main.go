@@ -2,8 +2,9 @@ package main
 
 import (
   "fmt"
+  "github.com/oneweerachai/go_math/geometry"
 )
 
 func main(){
-  fmt.Print("Hello, world from go online")
+  fmt.Println(geometry.CubeVolume(5))
 }
